@@ -1,0 +1,107 @@
+/* dit is de templagte voor de css voor alle paginas */
+
+
+@font-face {
+    font-family: 'nesfont';
+    src: url(assets/nintendo-nes-font.ttf);
+}
+
+/* BELANGRIJK!!!! plz schrijf shit in ALL CAPS anders ziet de font er lelijk uit -Dylan :) */
+
+
+body {
+    margin: 0;
+    padding-top: 130px;
+    background-image: url(assets/cool\ pattern.png);
+    background-size: 10%;
+    font-family: 'nesfont';
+}
+
+p{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+.pixels {
+    display: block;
+    image-rendering: pixelated;
+}
+
+#nav-devider{
+    position: fixed;
+    z-index: 1001;
+  }
+
+
+ul.navbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;            
+    list-style: none;
+    margin: 0;
+    padding: 0px 20px;                
+    background-color: #1d1d1d;
+    height: 130px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+
+.nav-left ul,.nav-right ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0 ;
+    list-style: none;
+    height: 100%;
+}
+
+#nav-logo img{
+    height: 100px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+#nav-logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav-right li{
+    height: 100%;
+  }
+  
+.nav-right ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #1d1d1d;
+    padding: 76px 150px;
+    text-decoration: none;
+    color: white;
+    border-right: 3px solid white;
+    transition: all 0.3s ease; 
+}
+  
+.nav-right ul li a:hover {
+    background-color: white; 
+    color: #1d1d1d;          
+    transform: scale(1.05);  
+}
+
+
+.nav-right li:nth-last-of-type(3) a {
+    border-left: 3px solid white;
+    background-color: #1d1d1d;
+}
